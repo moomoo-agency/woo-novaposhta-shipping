@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR MooMoo Web Studio
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Uni Woo Nova Poshta 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-02 11:14+0300\n"
+"PO-Revision-Date: 2017-05-02 11:14+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#: inc/class-uni-woo-novaposhta-shipping.php:23
+msgid "\"New Post\" (Nova Poshta)"
+msgstr "\"Нова Пошта\""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:24
+msgid ""
+"\"New Post\" (Nova Poshta) is an extremely popular delivery company in "
+"Ukraine"
+msgstr "\"Нова Пошта\" є дуже популярною компанією доставки в Україні"
+
+#: inc/class-uni-woo-novaposhta-shipping.php:35
+msgid "Nova Poshta"
+msgstr ""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:114
+msgid "Enable"
+msgstr ""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:116
+msgid "Enable this shipping."
+msgstr ""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:121
+msgid "Title"
+msgstr ""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:123
+msgid "Title to be display on site"
+msgstr ""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:124
+msgid "\"Nova Poshta\""
+msgstr "\"Нова Пошта\""
+
+#: inc/class-uni-woo-novaposhta-shipping.php:128
+msgid "Flat shipping fee"
+msgstr "Єдиний тариф"
+
+#: inc/class-uni-woo-novaposhta-shipping.php:130
+msgid "Define flat shipping fee"
+msgstr "Вкажіть \"єдиний\" тариф"
+
+#: inc/class-uni-woo-novaposhta-shipping.php:135
+msgid "API Key"
+msgstr "API ключ"
+
+#: inc/class-uni-woo-novaposhta-shipping.php:137
+msgid "Define your API key"
+msgstr "Вкажіть API ключ Нової Пошти"
+
+#: new-post.php:174 new-post.php:228
+msgid "Region"
+msgstr "Область"
+
+#: new-post.php:183 new-post.php:237
+msgid "City"
+msgstr "Місто"
+
+#: new-post.php:186 new-post.php:240 new-post.php:447
+msgid "Select a City"
+msgstr "Виберіть місто"
+
+#: new-post.php:192 new-post.php:246
+msgid "Warehouse"
+msgstr "Склад"
+
+#: new-post.php:195 new-post.php:249 new-post.php:448
+msgid "Select a Warehouse"
+msgstr "Виберіть склад"
+
+#: new-post.php:357
+msgid "Please choose your region"
+msgstr "Будь ласка, виберіть область"
+
+#: new-post.php:360
+msgid "Please choose your city for Nova Poshta delivery"
+msgstr "Будь ласка, виберіть місто доставки"
+
+#: new-post.php:363
+msgid "Please choose Nova Poshta warehouse"
+msgstr "Будь ласка, виберіть склад Нової Пошти"
+
+#: new-post.php:446
+msgid "Select a Region"
+msgstr "Виберіть область"
+
+#: new-post.php:511
+msgid "Error!"
+msgstr ""
