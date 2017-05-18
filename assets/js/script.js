@@ -33,69 +33,69 @@ jQuery( document ).ready( function( $ ) {
 
             if ( is_ship_diff ) {
 
-                $('#billing_np_region_field').removeClass('validate-required woocommerce-validated').hide();
-                $('#billing_np_city_field').removeClass('validate-required woocommerce-validated').hide();
-                $('#billing_np_warehouse_field').removeClass('validate-required woocommerce-validated').hide();
+                $('#billing_np_region_field').removeClass('validate-required').hide();
+                $('#billing_np_city_field').removeClass('validate-required').hide();
+                $('#billing_np_warehouse_field').removeClass('validate-required').hide();
 
-                $('#shipping_np_region_field').addClass('validate-required woocommerce-validated').show();
-                $('#shipping_np_city_field').addClass('validate-required woocommerce-validated').show();
-                $('#shipping_np_warehouse_field').addClass('validate-required woocommerce-validated').show();
+                $('#shipping_np_region_field').addClass('validate-required').show();
+                $('#shipping_np_city_field').addClass('validate-required').show();
+                $('#shipping_np_warehouse_field').addClass('validate-required').show();
 
                 fields_unbinding( $region_select_bill, $city_select_bill, $warehouse_select_bill );
                 fields_binding( $region_select_ship, $city_select_ship, $warehouse_select_ship );
 
                 if ( uni_woo_novaposhta.woo_fields_disable ) {
-                    $('#billing_city_field').addClass('validate-required woocommerce-validated').show();
-                    $('#billing_state_field').addClass('validate-required woocommerce-validated').show();
-                    $('#billing_postcode_field').addClass('validate-required woocommerce-validated').show();
+                    $('#billing_city_field').addClass('validate-required').show();
+                    $('#billing_state_field').addClass('validate-required').show();
+                    $('#billing_postcode_field').addClass('validate-required').show();
 
-                    $('#shipping_city_field').removeClass('validate-required woocommerce-validated').hide();
-                    $('#shipping_state_field').removeClass('validate-required woocommerce-validated').hide();
-                    $('#shipping_postcode_field').removeClass('validate-required woocommerce-validated').hide();
+                    $('#shipping_city_field').removeClass('validate-required').hide();
+                    $('#shipping_state_field').removeClass('validate-required').hide();
+                    $('#shipping_postcode_field').removeClass('validate-required').hide();
                 }
 
             } else {
 
-                $('#billing_np_region_field').addClass('validate-required woocommerce-validated').show();
-                $('#billing_np_city_field').addClass('validate-required woocommerce-validated').show();
-                $('#billing_np_warehouse_field').addClass('validate-required woocommerce-validated').show();
+                $('#billing_np_region_field').addClass('validate-required').show();
+                $('#billing_np_city_field').addClass('validate-required').show();
+                $('#billing_np_warehouse_field').addClass('validate-required').show();
 
-                $('#shipping_np_region_field').removeClass('validate-required woocommerce-validated').hide();
-                $('#shipping_np_city_field').removeClass('validate-required woocommerce-validated').hide();
-                $('#shipping_np_warehouse_field').removeClass('validate-required woocommerce-validated').hide();
+                $('#shipping_np_region_field').removeClass('validate-required').hide();
+                $('#shipping_np_city_field').removeClass('validate-required').hide();
+                $('#shipping_np_warehouse_field').removeClass('validate-required').hide();
 
                 fields_unbinding( $region_select_ship, $city_select_ship, $warehouse_select_ship );
                 fields_binding( $region_select_bill, $city_select_bill, $warehouse_select_bill );
 
                 if ( uni_woo_novaposhta.woo_fields_disable ) {
-                    $('#billing_city_field').removeClass('validate-required woocommerce-validated').hide();
-                    $('#billing_state_field').removeClass('validate-required woocommerce-validated').hide();
-                    $('#billing_postcode_field').removeClass('validate-required woocommerce-validated').hide();
+                    $('#billing_city_field').removeClass('validate-required').hide();
+                    $('#billing_state_field').removeClass('validate-required').hide();
+                    $('#billing_postcode_field').removeClass('validate-required').hide();
 
-                    $('#shipping_city_field').addClass('validate-required woocommerce-validated').show();
-                    $('#shipping_state_field').addClass('validate-required woocommerce-validated').show();
-                    $('#shipping_postcode_field').addClass('validate-required woocommerce-validated').show();
+                    $('#shipping_city_field').addClass('validate-required').show();
+                    $('#shipping_state_field').addClass('validate-required').show();
+                    $('#shipping_postcode_field').addClass('validate-required').show();
                 }
 
             }
 
         } else {
-            $('#billing_np_region_field').removeClass('validate-required woocommerce-validated').hide();
-            $('#billing_np_city_field').removeClass('validate-required woocommerce-validated').hide();
-            $('#billing_np_warehouse_field').removeClass('validate-required woocommerce-validated').hide();
+            $('#billing_np_region_field').removeClass('validate-required').hide();
+            $('#billing_np_city_field').removeClass('validate-required').hide();
+            $('#billing_np_warehouse_field').removeClass('validate-required').hide();
 
-            $('#shipping_np_region_field').removeClass('validate-required woocommerce-validated').hide();
-            $('#shipping_np_city_field').removeClass('validate-required woocommerce-validated').hide();
-            $('#shipping_np_warehouse_field').removeClass('validate-required woocommerce-validated').hide();
+            $('#shipping_np_region_field').removeClass('validate-required').hide();
+            $('#shipping_np_city_field').removeClass('validate-required').hide();
+            $('#shipping_np_warehouse_field').removeClass('validate-required').hide();
 
             if ( uni_woo_novaposhta.woo_fields_disable ) {
-                $('#billing_city_field').addClass('validate-required woocommerce-validated').show();
-                $('#billing_state_field').addClass('validate-required woocommerce-validated').show();
-                $('#billing_postcode_field').addClass('validate-required woocommerce-validated').show();
+                $('#billing_city_field').addClass('validate-required').show();
+                $('#billing_state_field').addClass('validate-required').show();
+                $('#billing_postcode_field').addClass('validate-required').show();
 
-                $('#shipping_city_field').addClass('validate-required woocommerce-validated').show();
-                $('#shipping_state_field').addClass('validate-required woocommerce-validated').show();
-                $('#shipping_postcode_field').addClass('validate-required woocommerce-validated').show();
+                $('#shipping_city_field').addClass('validate-required').show();
+                $('#shipping_state_field').addClass('validate-required').show();
+                $('#shipping_postcode_field').addClass('validate-required').show();
             }
 
             fields_unbinding( $region_select_bill, $city_select_bill, $warehouse_select_bill );

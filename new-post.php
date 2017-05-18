@@ -4,7 +4,7 @@ Plugin Name: WooСommerce - 'New Post' (Nova Poshta) Shipping Method
 Plugin URI: http://moomoo.agency/demo/cpo
 Description: Adds 'New Post' (Nova Poshta) shipping method to your WooCommerce store
 Author: Vitalii 'mr.psiho' Kiiko
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://moomoo.agency
 */
 
@@ -78,7 +78,7 @@ if (in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', ge
 				if ( WC()->session->get( 'chosen_shipping_methods' )[0] === 'novaposhta' ) {
                     return true;
                 } else {
-                    return false;
+                    return apply_filters('uni_woo_is_np_method_chosen', false, WC()->session);
                 }
 			}
 
@@ -146,6 +146,13 @@ if (in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', ge
                     unset($fields['shipping']['shipping_address_1']);
                     unset($fields['shipping']['shipping_address_2']);
                     unset($fields['shipping']['shipping_postcode']);*/
+                } else {
+                    $fields['billing']['billing_np_region']['required']      = false;
+                    $fields['billing']['billing_np_city']['required']        = false;
+                    $fields['billing']['billing_np_warehouse']['required']   = false;
+                    $fields['shipping']['shipping_np_region']['required']      = false;
+                    $fields['shipping']['shipping_np_city']['required']        = false;
+                    $fields['shipping']['shipping_np_warehouse']['required']   = false;
                 }
                 return $fields;
 			}
@@ -352,6 +359,7 @@ if (in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', ge
 
             //
             public function validate_np_fields_data(){
+                console.log(WC()->session->get( 'chosen_shipping_methods' )[0]);
                 if ( true === $this->is_np() ) {
                     if ( ! isset( $_POST['shipping_np_region'] ) && empty( $_POST['shipping_np_region'] ) ) {
                         wc_add_notice( __( 'Please choose your region', 'novaposhta' ), 'error' );
